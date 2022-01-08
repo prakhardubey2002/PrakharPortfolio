@@ -169,8 +169,6 @@ section ul li.active{
 }
 .product .itemBox img{
     position: absolute;
-    /* top: 0%;
-    left: 0%; */
     width: 80%;
     height: 80%;
     object-fit: fill;
@@ -237,14 +235,6 @@ section ul li.active{
 }
 footer{
     display: none;
-    /* position: absolute;
-    top: 190%;
-    width: 100vw;
-    height: 5vh;
-    background: var(--primary);
-    display: flex;
-    text-align: center;
-    justify-content: center; */
 }
 /* # Phone */
 @media only screen and (max-width:600px){

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif,Georgia, 'Times New Roman', Times;
+}
+body{
+    min-height: 100vh;
+    /* background:radial-gradient(30deg,#54c7c7,#222739); */
+    background-image: radial-gradient(#54c7c7, 
+    #305c68, #222739);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+#qwe{
+    display: block;
+    color: white;
+    padding: 1rem;
+}
