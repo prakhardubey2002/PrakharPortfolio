@@ -16,7 +16,7 @@
     border-right: 0px solid var(--tertiary);
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--pentanory);
+    background: #ce2f99;
     width: 0%;
     height: 35%;
     transition: 0.5 ease;
@@ -30,7 +30,8 @@
     font-family: 'Poppins',sans-serif,Georgia, 'Times New Roman', Times;
 }
 body{
-    background-image: linear-gradient(130deg,#54c7c7,#222739);
+    background-image: linear-gradient(130deg,
+    #ce2f99,#6a3deb);
     overflow-x: hidden;
 }
 #qwe{
@@ -42,16 +43,11 @@ body{
 .main{
     min-height: auto;
     padding: 4rem 0;
-    /* background-image: linear-gradient(130deg,#54c7c7,#222739);
-    background-repeat:no-repeat ;
-    background-size: cover; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
 }
 .blog{
-    /* position: relative; */
     width: 80vw;
     background: var(--quatanery);
     color: var(--tertiary);
