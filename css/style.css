@@ -452,7 +452,7 @@ footer{
     font-family: 'Open Sans', sans-serif;
     transition: all .5s ease;
   }
-  .sidebar a:nth-child(7){
+  .sidebar a:nth-child(6){
       border-bottom: 0;
   }
   .sidebar a:nth-child(1){
