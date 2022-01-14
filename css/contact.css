@@ -169,6 +169,7 @@ section::before{
   z-index: 1;
   color: black;
   border: 0;
+  display: block;
 }
 .container .row100 .col .inputBox .text{
   position: absolute;
@@ -179,7 +180,7 @@ section::before{
   padding: 0 10px;
   display: block;
   transition: 0.5s;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 .container .row100 .col .inputBox input:focus + .text,
 .container .row100 .col .inputBox input:valid + .text,
