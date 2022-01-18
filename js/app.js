@@ -96,3 +96,7 @@ var rellax = new Rellax('.rellax');
 //     backSpeed: 300,
 //   });
 // }
+function myfunction(){
+  var preloader = document.getElementById('loading');
+  preloader.style.display='none';
+}
