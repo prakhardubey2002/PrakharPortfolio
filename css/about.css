@@ -571,6 +571,23 @@ footer{
     .fest{
         display: block;
     }
+    .bar .progress-line span::after{
+        width: 0.4rem;
+        font-size: 0.4rem;
+        top: -20px;
+    }
+    .bar .progress-line span::before {
+        position: absolute;
+        content: "";
+        top: -12px;
+        right: 0%;
+        height: 0%;
+        width: 0%;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+    }
     .sidebar{
       display: block;
       height: auto;
