@@ -387,10 +387,11 @@ footer h3 a{
     font-weight: 400;
   }
   .mobile .cont .inpu{
-    height: 10%;
+    /* height: 10%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1rem;
   }
   .mobile .cont button{
     padding: 8px 18px;
@@ -425,14 +426,14 @@ footer h3 a{
     /* display: block; */
     position: absolute;
     width: 70vw;
-    top: 10%;
+    top: 5%;
   }
   .mobile .cont{ 
     position:absolute;
     z-index: 1000;
     width: 100%;
-    height: 70vh;
-    max-width: 80vw;
+    height: 80vh;
+    max-width: 85vw;
     padding: 32px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
