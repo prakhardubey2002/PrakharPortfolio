@@ -34,6 +34,7 @@ body{
     background: #262626;
     overflow-x: hidden;
 }
+
 header{
     width: 100%;
     height: 90vh;
@@ -228,7 +229,119 @@ section::before{
   font-weight: 600;
   font-size: 18px;
 }
+#mob{
+  display: none;
+}
+.fest{
+  display: none;
+}
+.sidebar{
+  display: none;
+  position: fixed;
+  width: 200px;
+  left: -240px;
+  height: 100%;
+  background: #1e1e1e;
+  transition: all .5s ease;
+  z-index: 1000;
+  border-radius: 2rem;
+}
+.sidebar a{
+  display: block;
+  height: 50px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+.sidebar a:nth-child(6){
+    border-bottom: 0;
+}
+.sidebar a:nth-child(1){
+  border-top: 0;
+}
+
+
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile{
+  /* display: block; */
+  position: absolute;
+  width: 70vw;
+  top: 10%;
+}
+
+
+.menu a{
+  border-left: 0px;
+}
+footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h3{
+  color: white;
+  font-weight: 200;
+  padding: 1rem;
+}
+footer h3 a{
+  text-decoration: none;
+  color: plum;
+  cursor: pointer;
+}
 @media only screen and (max-width:500px){
+
     header{
         width:100vw;
         display: flex;
@@ -259,86 +372,80 @@ section::before{
         display: none;
     }
 }
-.fest{
-    display: none;
-}
-.sidebar{
-    display: none;
-    position: fixed;
-    width: 200px;
-    left: -240px;
-    height: 100%;
-    background: #1e1e1e;
-    transition: all .5s ease;
-    z-index: 1000;
-    border-radius: 2rem;
-  }
-  .sidebar a{
-    display: block;
-    height: 50px;
-    width: 100%;
-    color: white;
-    line-height: 65px;
-    padding-left: 10px;
-    box-sizing: border-box;
-    border-bottom: 1px solid black;
-    border-top: 1px solid rgba(255,255,255,.1);
-    border-left: 5px solid transparent;
-    font-family: 'Open Sans', sans-serif;
-    transition: all .5s ease;
-  }
-  .sidebar a:nth-child(6){
-      border-bottom: 0;
-  }
-  .sidebar a:nth-child(1){
-    border-top: 0;
-}
 
 
-  .sidebar a i{
-    font-size: 23px;
-    margin-right: 16px;
-  }
-  .sidebar a span{
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  #check{
-    display: none;
-  }
-  label #btn,label #cancel{
-    position: absolute;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #262626;
-    margin: 15px 30px;
-    font-size: 29px;
-    background: #262626;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    line-height: 45px;
-    transition: all .5s ease;
-  }
-  label #cancel{
-    opacity: 0;
-    visibility: hidden;
-  }
-  #check:checked ~ .sidebar{
-    left: 0;
-  }
-  #check:checked ~ label #btn{
-    margin-left: 245px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  #check:checked ~ label #cancel{
-    margin-left: 245px;
-    opacity: 1;
-    visibility: visible;
-  }
 @media(max-width : 860px){
+  #mob{
+    display:block;
+  }
+  .mobile .cont h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .mobile .cont .inpu{
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile .cont button{
+    padding: 8px 18px;
+    font-size: 1.2rem;
+    outline: none;
+    font-weight: 500;
+    color: var(--tertiary);
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+  }
+  .mobile .cont .inpu label{
+    color: var(--tertiary);
+    font-size: 1.1rem;
+  }
+  .mobile .cont .inpu input{
+    outline: none;
+    background: transparent;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    color: var(--tertiary);
+    border: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .mobile .cont .inpu input::placeholder{
+    font-size: 1.1rem;
+    color: var(--tertiary);
+  }
+  .mobile{
+    /* display: block; */
+    position: absolute;
+    width: 70vw;
+    top: 10%;
+  }
+  .mobile .cont{ 
+    position:absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 70vh;
+    max-width: 80vw;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
  section{
    overflow: hidden;
  } 
@@ -391,8 +498,8 @@ section::before{
       padding: 10px;
       z-index: -4;
     }
+    .container{
+      display: none;
+    }
   }
-  .menu a{
-    border-left: 0px;
-    
- }
+  
