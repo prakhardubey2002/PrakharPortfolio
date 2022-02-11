@@ -391,7 +391,7 @@ footer h3 a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* margin: 1rem; */
+    margin: 0.4rem;
   }
   .mobile .cont button{
     margin-left: 1.2rem;
