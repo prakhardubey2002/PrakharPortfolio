@@ -229,6 +229,16 @@ section::before{
   font-weight: 600;
   font-size: 18px;
 }
+.container .row100 .col  button{
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
 #mob{
   display: none;
 }
