@@ -246,6 +246,10 @@ footer{
     font-size: 14px;
     text-align: center;
 }
+.sec .numc ul li a{
+    text-decoration: none;
+    color: inherit;
+}
 .sec .numc h2{
     font-size: 16px;
 }
